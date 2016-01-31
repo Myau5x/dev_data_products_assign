@@ -1,0 +1,41 @@
+Shiny app presentation
+========================================================
+author: Olga Illarionova
+date: 1/30/2016
+Orange trees' circumference's prediction
+
+How predict circumference of orange trees?
+========================================================
+
+Let's look on dataset "Orange"
+```{r}
+summary(Orange)
+```
+
+Look on plot
+========================================================
+
+```{r, echo=FALSE }
+plot(circumference ~ age, data = Orange )
+```
+
+4 Slide With Code
+========================================================
+
+Lets make linear regression
+```{r}
+fit <-lm(circumference ~ age, data = Orange)
+fit
+```
+
+What do my app?
+========================================================
+
+Suppose we want to prognose tree's circumference in age 777 day.
+My application will do following calculation:
+```{r}
+predict(fit, data.frame(age = 777))
+
+```
+
+Where "fit" - is a model from previous slide.
