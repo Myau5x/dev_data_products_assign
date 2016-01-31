@@ -8,8 +8,12 @@ shinyUI(pageWithSidebar(
       ),
       mainPanel(
             h3('Predicted circumference'),
-            h5('in mm'),
-            verbatimTextOutput("oid1")
-           
+            h4('in mm'),
+            verbatimTextOutput("oid1"),
+            h5('Documentation'),
+            p("This application predicts tree's circumference based on tree's circumference.
+I used dataset 'Oranges' from R package 'datasets'.
+I used linear regression model.
+User should input age of tree in input window then he gets result in mm in output window.")
       )
 ))
