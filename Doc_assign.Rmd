@@ -1,0 +1,11 @@
+---
+title: "Application documentation"
+author: "Olga Illarionova"
+date: "January 30, 2016"
+output: html_document
+---
+
+This application predicts tree's circumference based on tree's circumference.
+I used dataset "Oranges" from R package "datasets".
+I used linear regression model.
+User should input age of tree in input window then he gets result in mm in output window. 
